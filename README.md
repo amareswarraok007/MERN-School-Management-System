@@ -94,7 +94,7 @@ After completing these steps, try signing up again. If the issue persists, follo
 const REACT_APP_BASE_URL = "http://localhost:5000";
 ```
 
-3. Replace all instances of `process.env.REACT_APP_BASE_URL` with `REACT_APP_BASE_URL`.
+3. Replace all instances of `REACT_APP_BASE_URL` with `REACT_APP_BASE_URL`.
 
 **IMPORTANT:** Repeat the same process for all other files with "Handle" in their names.
 
@@ -123,7 +123,7 @@ When attempting to delete items, you may encounter a popup message stating, "Sor
 //     dispatch(getRequest());
 
 //     try {
-//         const result = await axios.delete(`${process.env.REACT_APP_BASE_URL}/${address}/${id}`);
+//         const result = await axios.delete(`${REACT_APP_BASE_URL}/${address}/${id}`);
 //         if (result.data.message) {
 //             dispatch(getFailed(result.data.message));
 //         } else {
