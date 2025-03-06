@@ -23,11 +23,24 @@
     "redux": "^4.2.1",
     "styled-components": "^5.3.10"
   },
+  "devDependencies": {
+    "npm-force-resolutions": "^0.0.10",
+    "nth-check": "2.0.1",
+    "postcss": "8.4.31",
+    "serialize-javascript": "6.0.2",
+    "webpack": "^5.81.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "nth-check": "2.0.1",
+    "postcss": "8.4.31",
+    "serialize-javascript": "6.0.2"
   },
   "eslintConfig": {
     "extends": [
@@ -46,8 +59,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "webpack": "^5.81.0"
   }
 }
